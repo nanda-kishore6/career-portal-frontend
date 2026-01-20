@@ -1,0 +1,17 @@
+# Node
+node_modules/
+
+# Environment variables
+.env
+
+# Build outputs
+dist/
+build/
+
+# Logs
+npm-debug.log*
+
+# Ignore backend & misc
+Backend/
+supabase/
+*.zip

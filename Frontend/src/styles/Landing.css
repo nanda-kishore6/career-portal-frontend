@@ -1,0 +1,229 @@
+/* ===== Landing Page Hero ===== */
+
+.landing-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  padding: 60px 40px;
+  gap: 80px; /* space between sections */
+}
+
+
+.hero-section {
+    width: 100%;
+  max-width: 900px;
+  text-align: center;
+  background: #ffffff;
+  padding: 60px 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.15rem;
+  color: #475569;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-actions button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Primary CTA */
+.hero-actions button:first-child {
+  background: #4f46e5;
+  color: white;
+}
+
+.hero-actions button:first-child:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* Secondary CTA */
+.hero-actions button:last-child {
+  background: transparent;
+  color: #4f46e5;
+  border: 2px solid #4f46e5;
+}
+
+.hero-actions button:last-child:hover {
+  background: #eef2ff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 25px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}
+/* ===== Features Section ===== */
+
+.features-section {
+  margin-top: 80px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== CTA Section ===== */
+
+.cta-section {
+  margin-top: 100px;
+  padding: 70px 40px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  border-radius: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+  color: #e0e7ff;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-actions button {
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Primary CTA */
+.cta-actions button:first-child {
+  background: #ffffff;
+  color: #4f46e5;
+}
+
+.cta-actions button:first-child:hover {
+  transform: translateY(-2px);
+  background: #eef2ff;
+}
+
+/* Secondary CTA */
+.cta-actions button:last-child {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.cta-actions button:last-child:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-actions {
+    flex-direction: column;
+  }
+}
+/* ===== Footer ===== */
+
+.footer {
+  width: 100%;
+  margin-top: 60px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.footer span {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
