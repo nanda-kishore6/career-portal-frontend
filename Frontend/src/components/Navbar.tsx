@@ -18,7 +18,7 @@ function Navbar() {
         </button>
 
         {/* Links */}
-        <div className="flex items-center gap-6 text-sm font-medium">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-sm font-medium">
           <Link to="/opportunities" className="hover:text-indigo-600 transition-colors"
 >
             Opportunities
